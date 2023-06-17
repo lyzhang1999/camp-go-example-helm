@@ -99,9 +99,9 @@ securityContext: {}
 
 ingress:
   enabled: true
-  className: ""
-  annotations: 
-    kubernetes.io/ingress.class: ingress-nginx
+  className: "gitlab-nginx"
+  annotations: {}
+    # kubernetes.io/ingress.class: ingress-nginx
     # kubernetes.io/tls-acme: "true"
   hosts:
     - host: podinfo.local
