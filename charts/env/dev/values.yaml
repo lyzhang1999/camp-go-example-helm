@@ -108,7 +108,7 @@ ingress:
     kubernetes.io/ingress.class: ingress-nginx
     # kubernetes.io/tls-acme: "true"
   hosts:
-    - host: "{{ .Release.Namespace }}.podinfo.local"
+    - host: podinfo.local
       paths:
         - path: /
           pathType: ImplementationSpecific
