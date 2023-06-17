@@ -33,7 +33,7 @@ spec:
             pathType: {{ .pathType }}
             backend:
               service:
-                name: {{ $fullName }}.{{ $.Release.Namespace }}
+                name: {{ $fullName }}
                 port:
                   number: {{ $svcPort }}
           {{- end }}
