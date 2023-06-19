@@ -11,6 +11,9 @@ image:
   tag: latest
   pullPolicy: IfNotPresent
 
+imagePullSecrets:
+  - name: regcred
+
 ui:
   color: "#34577c"
   message: ""
