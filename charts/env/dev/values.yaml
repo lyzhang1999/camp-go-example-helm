@@ -7,7 +7,7 @@ backend: #http://backend-podinfo:9898/echo
 backends: []
 
 image:
-  repository: ghcr.io/stefanprodan/podinfo
+  repository: harbor.wei2.gkdevopscamp.com/library/camp-go-example
   tag: latest
   pullPolicy: IfNotPresent
 
