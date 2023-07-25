@@ -78,7 +78,7 @@ hpa:
   enabled: true
   maxReplicas: 10
   # average total CPU usage per pod (1-100)
-  cpu: 99
+  cpu: 40
   # average memory usage per pod (100Mi-1Gi)
   memory:
   # average http requests per second per pod (k8s-prometheus-adapter)
@@ -132,9 +132,11 @@ serviceMonitor:
 
 resources:
   limits:
+    cpu: 100m
+    memory: 200Mi
   requests:
-    cpu: 1m
-    memory: 16Mi
+    cpu: 50m
+    memory: 100Mi
 
 nodeSelector: {}
 
