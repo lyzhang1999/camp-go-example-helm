@@ -75,10 +75,10 @@ certificate:
 
 # metrics-server add-on required
 hpa:
-  enabled: false
+  enabled: true
   maxReplicas: 10
   # average total CPU usage per pod (1-100)
-  cpu:
+  cpu: 99
   # average memory usage per pod (100Mi-1Gi)
   memory:
   # average http requests per second per pod (k8s-prometheus-adapter)
